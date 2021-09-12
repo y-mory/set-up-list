@@ -3,8 +3,8 @@ brew bundle
 # ホームの.Brewfileからインストール実施
 brew bundle --global
 
-# bundleファイルを作成
-brew bundle dump
+# bundleファイルを作成(上書き)
+brew bundle dump --force
 
 # bundle一覧を確認
 brew bundle list
