@@ -11,7 +11,10 @@ git config --global color.ui true
 git config --global color.diff auto
 git config --global color.status auto
 git config --global color.branch auto
-git comfig --global push.default current
+git config --global push.default current
+git config --global core.excludesfile "~/.config/git/ignore"
+git config --global core.pager "LESSCHARSET=utf-8 less"
+git config --global core.quotepath false
 
 # ブランチ名をプロンプト表示
 # 初回のみ
@@ -22,7 +25,7 @@ wget -O ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/
 brew bundle install
 
 # シンボリックリンク
-ln .bashrc ~/.bashrc
-ln .bash_profile  ~/.bash_profile
-ln .vimrc  ~/.vimrc
+ln -s .bashrc ~/.bashrc
+ln -s .bash_profile  ~/.bash_profile
+ln -s .vimrc  ~/.vimrc
 
